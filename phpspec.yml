@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Zoom
+        psr4_prefix: Zoom
+        src_path: app
