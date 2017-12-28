@@ -6,7 +6,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-This web is made for security camera. It is responsive and suitable for all PCs, Mobiles, and Tablets 
+This is an easy web made for installation cameras company. 
 
 ## Requirment 
 PHP >=5.6.8
