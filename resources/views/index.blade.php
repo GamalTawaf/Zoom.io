@@ -4,7 +4,7 @@
 <!--[if !IE]><!--> 
 <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Zoom</title>
+    <title>Sama Security Services</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,7 +44,7 @@
         <div class="container">            
             <h1 class="logo pull-left">
                 <a class="scrollto" href="#promo">
-                    <span class="logo-title">ZOOM</span>
+                    <span class="logo-title">Sama Security Services</span>
                 </a>
             </h1><!--//logo-->
 
@@ -72,7 +72,7 @@
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <p class="intro">We practice agile and lean iterative process for project management with a sharp focus on designing smooth user experience.
+            <p class="intro">Over 10 years of Security Systems Services and Thousands of Satisfied Customers. 
             <img src="UserInterface/images/CCTV-Camera-icon.png" class="img-png" />
         </div><!--//container-->
         	<br>

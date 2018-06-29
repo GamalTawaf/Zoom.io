@@ -4,7 +4,7 @@ namespace Zoom;
 use Illuminate\Database\Eloquent\Model;
 
 class Aboutus extends Model {
-	protected $table = 'Aboutus';
+	protected $table = 'aboutus';
 
     protected $fillable = ['text'];
 }
