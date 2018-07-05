@@ -9,7 +9,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <?php 
+	    $services_str = '';
+	    foreach($services as $service) {
+	    	if(strlen($services_str) > 0) {
+	    		$services_str = $services_str . ', ' . ucfirst($service->name);
+	    	} else {
+	    		$services_str = ucfirst($service->name);	    		
+	    	}
+	    }
+    ?>
+    <meta name="description" content="{{$services_str}}">
     <meta name="author" content="Ebrahim">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -95,7 +105,7 @@
             <h2 class="title">What do we do?</h2>
 			<div class="border-line"></div>
 			<p>
-		     {{$Aboutus->text}} 
+		     {{$aboutus->text}} 
 			</p>
 		   </div>
         </div>
@@ -116,20 +126,20 @@
 			<section class="slider">
 			    	<div class="flexslider">
 				    	<ul class="slides">
-			     		@foreach ($Testimonial as $Testimonial)
+			     		@foreach ($testimonials as $testimonial)
 				     	<li>
 					 		<div class="w3layouts_work_grid_left">
 								    <?php
-							    	$imgArr=explode(",",$Testimonial->images);
+							    	$imgArr=explode(",",$testimonial->images);
 							    	?>
 							    	@foreach ($imgArr as $arrKey => $value)
 							    			<img src="uploads/testimonials/{{$value}}" alt=" " class="img-responsive">
 							    	@endforeach	
 							</div>
 							<div class="w3layouts_work_grid_right">
-								<h4> {{ $Testimonial->title }}     </h4>
-								<p>  {{ $Testimonial->text }}      </p>
-								<h5> {{ $Testimonial->reference }} </h5>
+								<h4> {{ $testimonial->title }}     </h4>
+								<p>  {{ $testimonial->text }}      </p>
+								<h5> {{ $testimonial->reference }} </h5>
 								
 					 		</div>
 							<div class="clearfix"> </div>
@@ -182,8 +192,8 @@
 						<div class="col-xs-12">
 							<div class="styled-input wide">
 					 			<select class="field" placeholder="Options" name='serviceId'>
-					 				@foreach ($Service as $Service)
-					 					<option  value="{{$Service->id}}">{{ucfirst($Service->name)}}</option>
+					 				@foreach ($services as $service)
+					 					<option  value="{{$service->id}}">{{ucfirst($service->name)}}</option>
 					 				@endforeach
 					 			</select> 
 							</div>

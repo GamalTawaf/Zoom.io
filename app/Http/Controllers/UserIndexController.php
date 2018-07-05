@@ -19,10 +19,10 @@ class UserIndexController extends Controller
     */
     public function index()
     {
-        $Aboutus     = AboutUs::find('1');
-        $Testimonial = Testimonial::all();
-        $Service     = Service::all();
-        return view('index',compact('Aboutus','Testimonial','Service'));
+        $aboutus     = AboutUs::find('1');
+        $testimonials = Testimonial::all();
+        $services     = Service::all();
+        return view('index',compact('aboutus','testimonials','services'));
         
     }
     /*
