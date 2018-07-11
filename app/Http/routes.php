@@ -49,7 +49,7 @@ Route::post('uploadupdate','TestimonialController@update');
 Route::post('DeleteTestimonial','TestimonialController@delete');
 
 
-Route::get('AboutUs','AboutUsController@index');
+Route::get('AboutUs','AboutusController@index');
 Route::post('UpdateAboutus','AboutusController@update');
 Route::post('UpdateAboutus','AboutusController@update');
 
