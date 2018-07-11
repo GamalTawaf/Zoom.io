@@ -18,6 +18,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="3YMUD6Nm7CkH8kX2hWHBChIMi4pZt3n6erxRtBzyKC0" />
     <?php 
 	    $services_str = '';
 	    foreach($services as $service) {
