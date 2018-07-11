@@ -42,19 +42,15 @@ class UserIndexController extends Controller
         if ($Contact->save()) {
             $Service     = Service::find($inputs['serviceId']);
             $ServiceName=$Service->name;
-            $headers = 'From: ' .$inputs['email']. "\r\n" ;
+            $headers = "From: admin@samasecurityservices.com\r\n" ;
             $User = User::find('1');
             $to=$User->email; 
             $subject=$inputs['FirstName']." ".$inputs['LastName'].",".$ServiceName;
-            $message=$inputs['message'];
-            $mail=mail($to,$subject,$message,$headers);
-            $mail=mail($to,$subject,$message,$headers);
-            /*
-            if($mail)
-            return($message);
-            else
-                return("No");
-            */
+            $message= 'Hello Admin,
+                 You got a message from '.  $inputs['FirstName']." ".$inputs['LastName']
+                 . ' with email: ' . $inputs['email'] . 'Asking:' .$inputs['message'];
+            $mail= mail($to,$subject,$message,$headers);
+
             return ('<div class="alert alert-success alert-dismissable input-container" style="width: 620px !important;">
                             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
                             <strong>Your message has been sent successfully.</strong><br> We appreciate you contacting us about '.$ServiceName.'. We will be in touch with you shortly.

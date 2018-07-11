@@ -13,13 +13,13 @@
 	    $services_str = '';
 	    foreach($services as $service) {
 	    	if(strlen($services_str) > 0) {
-	    		$services_str = $services_str . ', ' . ucfirst($service->name);
+	    		$services_str = $services_str . '. ' . ucfirst($service->name);
 	    	} else {
 	    		$services_str = ucfirst($service->name);	    		
 	    	}
 	    }
     ?>
-    <meta name="description" content="{{$services_str}}">
+    <meta name="description" content="Sama Security Services. Canada. Ontario. Oshawa. Toronto. GTA. {{$services_str}}">
     <meta name="author" content="Ebrahim">    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -82,7 +82,7 @@
     <!-- ******PROMO****** -->
     <section id="promo" class="promo section offset-header">
         <div class="container text-center">
-            <p class="intro">Over 10 years of Security Systems Services and Thousands of Satisfied Customers. 
+            <p class="intro">Over 10 years of Security Systems Services in and around GTA (Greater Toronto Area), Canada and Thousands of Satisfied Customers. 
             <img src="UserInterface/images/CCTV-Camera-icon.png" class="img-png" />
         </div><!--//container-->
         	<br>
