@@ -65,3 +65,6 @@
 
    # if you keep getting log permission error 
    look at this answer https://stackoverflow.com/questions/44871684/run-laravel-application-on-red-hat
+   
+   # we are using https://certbot.eff.org/lets-encrypt/centosrhel7-apache
+    sudo certbot --apache 
