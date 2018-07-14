@@ -171,6 +171,10 @@
                 <div class="container">
      	          	<div class="row">
 	         			<h2 class="title">CONTACT US</h2>
+	         			<h2 class="title">Call</h2>
+	         			<h3 class="title"><a href="tel:+1 (647) 868-6143">1 (647) 868-6143</a></h3>
+	         			<h2 class="title">OR</h2>
+	         			<h3 class="title">Email</h3>
                 	</div>
                 <div id="Message" ></div>	
 				<div class="row input-container">
